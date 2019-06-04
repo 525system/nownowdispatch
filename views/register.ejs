@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Mirrored from neox-admin-templates.multipurposethemes.com/src/pages/samplepage/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Feb 2019 22:11:34 GMT -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="../../../images/favicon.ico" />
+
+    <title>NeoX Admin - Registration</title>
+
+    <!-- Bootstrap 4.0-->
+    <link
+      rel="stylesheet"
+      href="assets/vendor_components/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Bootstrap extend-->
+    <link rel="stylesheet" href="assets/css2/bootstrap-extend.css" />
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="assets/css2/master_style.css" />
+
+    <!-- NeoX Admin skins -->
+    <link rel="stylesheet" href="assets/css2/skins/_all-skins.css" />
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         </head>
+  <body
+    class="hold-transition bg-img"
+    style="background-image:url(assets/img/bg-2.jpg)"
+    data-overlay="5"
+  >
+    <div class="container pt-3 h-p100">
+      <div class="row h-p100 justify-content-sm-center align-items-center">
+        <div class="col-sm-6 col-md-4">
+          <div class="card border-info text-center">
+            <div class="card-header">
+              Register a new membership
+            </div>
+            <div class="card-body">
+
+                  <!-- show any messages that come back with authentication -->
+    <% if (message.length > 0) { %>
+      <div class="alert alert-danger"><%= message %></div>
+  <% } %>
+              <form action="/register" method="post" class="form-signin">
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  placeholder="Name"
+                  name="name"
+                  required
+                  autofocus
+                />
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control mb-2"
+                  placeholder="Email"
+                  required
+                  autofocus
+                />
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control mb-2"
+                  placeholder="Password"
+                  required
+                />
+                <input
+                  type="password"
+                  name="password2"
+                  class="form-control mb-2"
+                  placeholder="Confirm Password"
+                  required
+                />
+                <button
+                  class="btn btn-lg btn-primary btn-block mb-20"
+                  type="submit"
+                >
+                  SIGN UP
+                </button>
+                <div class="checkbox float-left">
+                  <input type="checkbox" id="basic_checkbox_1" />
+                  <label for="basic_checkbox_1"
+                    >I agree to the <a href="#"><b>Terms</b></a></label
+                  >
+                </div>
+                <a href="#" class="float-right">Need help?</a>
+              </form>
+            </div>
+          </div>
+          <p class="float-left text-white">
+            Go Back<a href="/index" class="text-info m-l-5"> Home</a>
+          </p>
+          <p class="float-right text-white">
+            Already have an account?<a
+              href="/login"
+              class="text-info m-l-5"
+            >
+              Sign In</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery 3 -->
+    <script src="assets/vendor_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- popper -->
+    <script src="assets/vendor_components/popper/dist/popper.min.js"></script>
+
+    <!-- Bootstrap 4.0-->
+    <script src="assets/vendor_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+
+  <!-- Mirrored from neox-admin-templates.multipurposethemes.com/src/pages/samplepage/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Feb 2019 22:11:34 GMT -->
+</html>
